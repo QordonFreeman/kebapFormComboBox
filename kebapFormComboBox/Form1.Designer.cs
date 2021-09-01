@@ -50,6 +50,7 @@ namespace kebapFormComboBox
             this.cmbYemek1.Name = "cmbYemek1";
             this.cmbYemek1.Size = new System.Drawing.Size(186, 21);
             this.cmbYemek1.TabIndex = 0;
+            this.cmbYemek1.SelectedIndexChanged += new System.EventHandler(this.cmbYemek1_SelectedIndexChanged_1);
             // 
             // cmbYemek2
             // 
@@ -90,17 +91,21 @@ namespace kebapFormComboBox
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(233, 29);
+            this.textBox1.Location = new System.Drawing.Point(312, 30);
+            this.textBox1.MaxLength = 2;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(51, 20);
             this.textBox1.TabIndex = 5;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(233, 143);
+            this.textBox2.Location = new System.Drawing.Point(312, 143);
+            this.textBox2.MaxLength = 2;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(51, 20);
             this.textBox2.TabIndex = 6;
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress);
             // 
             // lblOdenmesiGereken
             // 
@@ -114,7 +119,7 @@ namespace kebapFormComboBox
             // lblPorsiyonBilgisi
             // 
             this.lblPorsiyonBilgisi.AutoSize = true;
-            this.lblPorsiyonBilgisi.Location = new System.Drawing.Point(230, 13);
+            this.lblPorsiyonBilgisi.Location = new System.Drawing.Point(287, 14);
             this.lblPorsiyonBilgisi.Name = "lblPorsiyonBilgisi";
             this.lblPorsiyonBilgisi.Size = new System.Drawing.Size(76, 13);
             this.lblPorsiyonBilgisi.TabIndex = 8;
